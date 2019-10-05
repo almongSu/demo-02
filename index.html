@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>小新</title>
-      <style>
-          * {
-          background:#ddd;
-          }
-          img {
-            height:200px;
-            float:left;
-            margin-right:30px;
-          }
-      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简历</title>
 </head>
 <body>
-        <h1>蜡笔小新</h1>
-        <h2 style="margin-left:50px">野原新之助</h2>
-        <p>野原新之助是一个年仅5岁，正在幼儿园上学的小男孩。他家住在春日市的市郊，最初他与父亲广志和母亲美冴组成一个三人家族。随后又添加了流浪狗小白，后来又加入了新的成员妹妹野原葵。野原新之助进入公立小学就读，班级为1年1班。</p>
-        <img src="http://img4.imgtn.bdimg.com/it/u=1932461154,949306072&amp;fm=26&amp;gp=0.jpg" alt="小新" title="这是小新" >
-<section>
-        <ul><strong>小新简介</strong>
-            <li>活泼、好动、乐观、可爱</li>
-            <li>挑食、顽皮、爱耍贱</li>
-            <li>喜欢看动感超人</li>
-        </ul>
-        <ol><strong>小新的一些无厘头技能</strong>
-            <li>狗爬式游泳速度比广志的自由式速度更快</li>
-            <li>擅于攀爬，攀爬十分快。甚至会贴在墙上的壁虎功</li>
-            <li>可以用脚和屁股弹钢琴，弹出著名的外国民谣</li>
-        </ol>
-</section>
+    <style id="style"></style>
+    <div id="html">hi</div>
+    <div id="div1Wrapper">
+        <div id="div1"></div>
+    </div>div>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    *::after{box-sizing: border-box;}
+    *::before{box-sizing: border-box;}
+    #demo {
+        word-break: break-all;
+    }
+    #div1 {
+        position: fixed;
+        right: 20px;
+        top:20px;
+    }
+    #div1::before {
+        content: '';
+        display: block;
+        position: absolute;
+    }
+    #div1::after {
+        content: '';
+        display: block;
+        position: absolute;
+    }
+
+    @media (max-width:500px) {
+        #html {
+            height:50vh;
+            overflow: auto;
+        }
+        #div1Wrapper {
+            height:50vh;
+        }
+
+        #div1 {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+    </style>
+    <script src="main.js"></script>
 </body>
 </html>
